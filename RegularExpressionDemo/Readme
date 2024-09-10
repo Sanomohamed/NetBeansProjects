@@ -1,0 +1,43 @@
+Java Swing Regular Expression Checker
+A Java Swing application to test and visualize regular expression matches against input strings. This tool allows users to input a regular expression pattern and a test string, and then displays whether there are any matches and captures groups from the matches.
+
+Features
+Pattern Input: Enter a regular expression to be used for matching.
+Input String: Enter the string you want to test against the pattern.
+Check Button: Trigger the match operation and display the result.
+Output Area: Displays the result of the match operation, including captured groups if any.
+
+Usage
+Enter a Pattern:
+
+Input a regular expression pattern into the "Pattern:" text field.
+For example: (\d{3})-(\d{2})-(\d{4}).
+Enter Input String:
+
+Input a string to be tested against the pattern into the "Input:" text field.
+For example: 123-45-6789.
+Check:
+
+Click the "Check" button to perform the matching operation.
+The results will be displayed in the output area.
+View Results:
+
+If matches are found, the output area will display the captured groups from the match.
+If no matches are found, the output will show "Not Found!".
+Example
+Pattern: (\d{3})-(\d{2})-(\d{4})
+Input: 123-45-6789
+Output: 123:45:6789
+Code Explanation
+Regular Expression Matching:
+
+Uses Java's Pattern and Matcher classes to perform regex matching.'
+Supports capturing groups within the regular expression.
+GUI Components:
+
+JTextField for inputting the regular expression pattern and test string.
+JButton to trigger the match operation.
+JTextArea to display the results.
+Error Handling:
+
+If the pattern is invalid, the output area will display "Not Found!" even if the input string does not match the pattern.
