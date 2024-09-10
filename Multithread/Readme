@@ -1,0 +1,35 @@
+Multithreading Example in Java
+This Java project demonstrates basic concepts of multithreading using both the Thread class and the Runnable interface.
+It includes examples of how to create and manage threads, handle interruptions, and use random sleep times to simulate task execution.
+
+Project Overview
+The project consists of three classes:
+Mythread: Extends the Thread class and simulates a task by sleeping for a random period.
+MythreadRunner: Implements the Runnable interface and provides a simple implementation of the run method.
+Multithread: The main class that initializes and starts multiple threads, demonstrating how to use both Thread and Runnable.
+
+Classes
+Mythread
+Purpose: Extends Thread and represents a thread that performs a task with a random sleep duration.
+Constructor:
+Mythread(String threadName): Initializes the thread with a name and a random block time (sleep duration).
+Methods:
+run(): Prints the thread's name and sleep duration, then sleeps for the block time.'
+
+MythreadRunner
+Purpose: Implements Runnable to provide a simple task that prints "Running".
+Methods:
+run(): Prints "Running" when executed.
+
+Multithread
+Purpose: The entry point of the application that creates and starts multiple threads.
+Functionality:
+Creates and starts 5 threads using Mythread.
+Creates and starts 2 additional threads using MythreadRunner.
+
+Code Explanation
+Thread Creation: Demonstrates two ways to create threads:
+Extending the Thread class (Mythread).
+Implementing the Runnable interface (MythreadRunner).
+Random Sleep Time: Uses Random to simulate varying execution times.
+Thread Execution: Shows how to start and run threads concurrently.
