@@ -1,0 +1,42 @@
+User Information Management System
+This Java Swing application allows users to input their details, including name, IC (Identification Card), and gender. 
+It validates the inputs and displays corresponding messages. The application also features an icon that changes based on the selected gender.
+
+Features
+Input Fields: Users can input their name and IC number.
+Gender Selection: Choose gender via radio buttons. The icon updates based on the selected gender.
+Validation: Validates the name and IC input fields.
+Save Functionality: Displays a confirmation message if the input is valid, or error messages if not.
+
+Features in Detail
+Input Fields
+Name: Enter the user's name.
+IC: Enter the user's Identification Card number.
+Gender Selection
+Radio Buttons: Choose between "Male" and "Female". The displayed icon updates accordingly:
+Male: Displays a male icon.
+Female: Displays a female icon.
+Validation
+Name Validation: Ensures the name input is valid.
+IC Validation: Ensures the IC input is valid.
+Save Record
+Click Save: The application validates the inputs and displays a message in the output area:
+"Record Saved" if inputs are valid.
+Error messages if inputs are invalid.
+GUI Components
+Text Fields: For inputting name and IC number.
+Radio Buttons: For selecting gender.
+Labels: For showing text and instructions.
+Icon: Displays an image corresponding to the selected gender.
+Output Area: Displays validation results and status messages.
+Validation
+The Validator class is used for validating user inputs. It checks if the provided name and IC adhere to specified formats.
+
+Example
+Enter Details:
+
+Name: John Doe
+IC: 1234567890
+Select Gender: Choose "Male" or "Female".
+
+Click Save: If the details are valid, the application displays "Record Saved". If not, it shows the relevant error messages.
