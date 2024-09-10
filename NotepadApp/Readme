@@ -1,0 +1,46 @@
+Java Swing Notepad
+A simple Java Swing application that demonstrates basic file handling operations including opening, saving, and creating new text files.
+The application features a text area for editing and a menu bar with options for managing files.
+
+Features
+New: Clears the text area to start a new document.
+Open: Opens a text file and displays its content in the text area.
+Save: Saves the current content of the text area to a text file.
+Exit: Closes the application.
+About: Placeholder menu item for displaying information about the application.
+
+Usage
+New Document:
+
+Click the "New" menu item to clear the text area and start a new document.
+Open Document:
+
+Click the "Open" menu item.
+Use the file chooser to select a text file (.txt) to open.
+The content of the file will be displayed in the text area.
+Save Document:
+
+Click the "Save" menu item.
+Use the file chooser to select where to save the file.
+If the file does not have a .txt extension, it will be added automatically.
+Exit Application:
+
+Click the "Exit" menu item to close the application.
+About:
+
+Click the "About Us" menu item to view information about the application (currently a placeholder).
+Code Explanation
+GUI Initialization:
+
+The NewJFrame class extends javax.swing.JFrame and initializes GUI components in the initComponents method.
+Includes a JFileChooser for file operations and a JTextArea for displaying and editing text.
+File Operations:
+
+Open: Reads the content of a selected file and displays it in the text area.
+Save: Writes the content of the text area to a selected file. Ensures the file has a .txt extension.
+Custom File Filters:
+
+MyFileFilter class is used to filter files in the file chooser dialog based on their extension.
+File Filter Details
+Text Files: Filters for .txt files.
+PDF Files: Filters for .pdf files (currently not used but included as an example).
