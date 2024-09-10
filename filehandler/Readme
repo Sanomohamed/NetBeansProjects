@@ -1,0 +1,34 @@
+Java Swing File Explorer
+A simple Java Swing application to display the contents of a specified directory.
+This tool shows both files and directories within a given path when the "Show" button is clicked.
+
+Features
+Display Files and Directories: Lists all files and directories within a specified path.
+Directory Path: Hardcoded path for demonstration purposes.
+Output Display: Shows the names of files and directories in a text field.
+
+Usage
+Click "Show":
+
+Click the "Show" button to display the contents of the directory specified in the code.
+View Results:
+
+The output field will display the names of the files and directories in the specified directory.
+Code Explanation
+File Listing:
+
+Uses Java's File class to list files and directories.'
+The directory path is hardcoded as "C:\\Users\\Hp\\Pictures" in the example.
+GUI Components:
+
+JButton to trigger the display of directory contents.
+JTextField to show the names of files and directories.
+Directory Path:
+
+The path is specified directly in the code. Modify this path to target a different directory.
+Example
+Directory Path: "C:\\Users\\Hp\\Pictures"
+Output: Names of files and directories in this path will be displayed in the text field.
+Notes
+The output text field may need to be resized to fully view all contents, depending on the number of files and directories.
+Ensure the directory path exists and has the necessary permissions to be accessed.
