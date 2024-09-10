@@ -1,0 +1,45 @@
+Person Management System
+This project is a Java-based application for managing Person records. 
+The application allows you to add, update, delete, and view records. 
+It also calculates and displays BMI (Body Mass Index) based on a person's weight and height.'
+
+Features
+Add Record: Input details such as name, age, weight, and height. The application calculates the BMI and saves the record.
+Update Record: Update an existing person's details, including recalculating the BMI.'
+Delete Record: Remove a person’s record based on their name.
+View Records: Display all person records in the list.
+Calculate BMI: Calculate the BMI based on weight and height.
+File Structure
+Person.java: Defines the Person class with attributes for name, age, weight, height, and BMI. 
+Includes methods to get and set these attributes, and a toString method for displaying person information.
+NewJFrame.java: Contains the main application logic, including GUI components and event handlers for adding, updating, deleting, and displaying records.
+
+Features in Detail
+Add Record
+Enter the person's name, age, weight, and height in the input fields.'
+Click the "Save" button to add the record. The BMI is calculated and displayed.
+Update Record
+Select a person’s name from the dropdown.
+Update the person's details in the input fields.'
+Click the "Update" button to apply changes. The BMI is recalculated and updated.
+Delete Record
+Enter the name of the person you wish to delete in the input field.
+Click the "Delete" button to remove the record.
+View Records
+Click the "Display All" button to view all person records.
+Calculate BMI
+Enter the weight and height.
+Click the "Calculate BMI" button to display the BMI.
+GUI Components
+Text Fields: For inputting person details (name, age, weight, height, BMI).
+Buttons: For performing actions such as add, update, delete, save, and calculate BMI.
+Combo Box: For selecting a person's name for updating or viewing details.
+Text Areas: For displaying records and status messages.
+Example
+Here's an example of how to add a person:
+Enter:
+Name: John Doe
+Age: 30
+Weight: 70.0
+Height: 1.75
+Click "Save". The application calculates the BMI and adds the record.
