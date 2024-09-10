@@ -1,0 +1,36 @@
+Java Swing GUI Application
+This Java Swing application provides a graphical user interface to display a list of hobbies and countries. 
+Users can select items from a list and a dropdown menu, and then view their selections in a text pane.
+
+Features
+Hobbies List: Displays a list of hobbies that users can view.
+Countries Dropdown: Provides a dropdown menu with a list of countries.
+Display Selection: Shows the selected country from the dropdown menu in a text pane when the "Show" button is clicked
+
+GUI Components
+Hobbies List (hblist):
+
+A list of hobbies is displayed using a JList inside a JScrollPane.
+Countries Dropdown (cbcountry):
+
+A combo box (dropdown) showing a list of countries.
+Show Button (jButton1):
+
+When clicked, this button displays the selected country from the dropdown in the output text pane.
+Output Pane (output):
+
+A text pane that shows the selected country from the dropdown menu.
+Code Overview
+Hobbies and Countries Data:
+
+The application uses hardcoded arrays for hobbies and countries.
+Initialization:
+
+DefaultListModel is used to populate the JList with hobbies.
+JComboBox is populated with country names.
+Event Handling:
+
+Clicking the "Show" button retrieves the selected country from the dropdown and displays it in the output text pane.
+Example
+Select a Country: Choose a country from the dropdown menu.
+Click "Show": Click the "Show" button to display the selected country in the text pane.
