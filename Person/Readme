@@ -1,0 +1,56 @@
+Java Swing Form Validation
+A Java Swing application for managing personal information with form validation. 
+This application includes fields for Name, IC Number, and Email, with validation to ensure the entered data meets specific criteria.
+
+Features
+Form Fields:
+
+Name: Must contain alphabetic characters only.
+IC Number: Must match the format 123456-12-1234.
+Email: Must be in a valid email format, e.g., abc@def.com.
+Validation:
+
+Provides error messages when the input does not meet the specified criteria.
+Uses regular expressions to validate input fields.
+Save Functionality:
+
+Upon successful validation, saves the personal data into a Person object.
+Displays a confirmation message upon successful save.
+
+Usage
+Enter Data:
+
+Name: Enter your full name. Only alphabetic characters and spaces are allowed.
+IC Number: Enter your IC number in the format 123456-12-1234.
+Email: Enter a valid email address.
+Validation:
+
+After entering data, the application will validate the input when you focus out of each field.
+Error messages will appear below the respective fields if the input is invalid.
+Save:
+
+Click the "Save" button to validate the input fields and save the data.
+A confirmation message will be shown if the data is valid.
+Code Explanation
+Validation Logic:
+
+Uses regular expressions to ensure the correctness of the input.
+Provides real-time feedback on input validation using focus listeners.
+GUI Components:
+
+JTextField for user input.
+JLabel for error messages.
+JButton to trigger the save action.
+Error Handling:
+
+Displays appropriate error messages for invalid inputs.
+Regular Expressions Used
+Name: ^([a-zA-Z]+)((\\s[a-zA-Z]+)*)$
+
+Ensures the name consists of alphabetic characters and spaces only.
+IC Number: ^(\\d{6})-(\\d{2})-(\\d{4})$
+
+Validates the IC number format.
+Email: ^(\\w+)((\\.\\w+)*)@(\\w+)((\\w+.)*)$
+
+Ensures the email address is in a valid format.
