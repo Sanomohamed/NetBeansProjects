@@ -1,1 +1,40 @@
+File Management System with Java Swing
+This Java Swing application allows users to manage files by saving and loading text content. 
+It provides a simple interface to specify the file name, input text, and then perform save or load operations.
 
+Features
+Save Text to File: Allows users to save the text from the TextArea to a specified file.
+Load Text from File: Allows users to load text from a specified file and display it in the TextArea.
+File Information Display: On startup, the application displays information about a predefined file including its last modification date and readability.
+
+GUI Components
+File Name Input: A TextField to enter the name of the file to be saved or loaded.
+Text Area: An area where you can input or view text.
+Save Button: Saves the content of the TextArea to the specified file.
+Load Button: Loads the content from the specified file into the TextArea.
+Functionality
+Save Text to File:
+
+Enter the file name in the TextField.
+Click the Save button to write the text from the TextArea to the file.
+Load Text from File:
+
+Enter the file name in the TextField.
+Click the Load button to read the text from the file and display it in the TextArea.
+File Information:
+
+On startup, the application displays the last modification date of a predefined file and checks if it is readable.
+Code Explanation
+File Handling: The application uses FileWriter and FileReader for saving and loading text files.
+Date Formatting: Uses SimpleDateFormat to display the last modification date of a file.
+Validation: Checks if the file can be read and displays appropriate messages.
+Example
+Save Example:
+
+Enter "example.txt" in the file name field.
+Type "This is a sample text." in the TextArea.
+Click Save. The text is saved to example.txt.
+Load Example:
+
+Enter "example.txt" in the file name field.
+Click Load. The text from example.txt is displayed in the TextArea.
